@@ -42,8 +42,6 @@ public void draw ()
         displayLosingMessage();
         noLoop();
     }
-    System.out.println("isWon = "+isWon());
-    System.out.println("isLost = "+isLost());
 }
 public boolean isLost()
 {
@@ -151,7 +149,6 @@ public class MSButton
         else if(!bombs.contains(buttons[r][c]) && countBombs(r, c) > 0)
         {
             setLabel(""+countBombs(r, c));
-            System.out.println(countBombs(r, c));
         }
         else
         {
